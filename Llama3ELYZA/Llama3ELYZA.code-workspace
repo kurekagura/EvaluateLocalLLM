@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"black-formatter.args": [
+			"--line-length=128"
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Python: main",
+				"type": "debugpy",
+				"request": "launch",
+				"program": "main.py",
+				"console": "integratedTerminal",
+				"justMyCode": true,
+				"args": []
+			}
+		]
+	}
+}
