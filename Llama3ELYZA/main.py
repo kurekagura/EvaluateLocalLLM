@@ -1,3 +1,4 @@
+import sys
 import time
 from llama_cpp import Llama
 
@@ -36,10 +37,15 @@ if __name__ == "__main__":
     # 空行ごとに分割してリストに格納
     userMessageList = content.split("\n\n")
 
+    start_time = time.time()
     llm = load_model()
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"モデルロード所要時間: {elapsed_time:.2f} 秒")
+
     # 各メッセージをループで表示
     for index, userMessage in enumerate(userMessageList):
-        print(f"文章-{index + 1}:")
+        print(f"回答（要約）ー {index + 1}:")
         start_time = time.time()
         response = create_summary(llm, userMessage)
         end_time = time.time()
@@ -48,3 +54,6 @@ if __name__ == "__main__":
         elapsed_time = end_time - start_time
         print(f"所要時間: {elapsed_time:.2f} 秒 要約文字数：{len(userMessage)} -> {len(content)}文字")
         print("-" * 20)
+
+    sys.stderr.write("Press Enter to exit...\n")
+    input()  # Enterキーが押されるまで待機

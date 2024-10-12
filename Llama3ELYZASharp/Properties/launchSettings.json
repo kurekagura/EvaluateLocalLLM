@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Llama3ELYZASharp": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}

@@ -11,7 +11,13 @@ pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-c
 
 ```
 
+モデルを[Hugging Face](https://huggingface.co/elyza/Llama-3-ELYZA-JP-8B-GGUF/tree/main)からダウンロードして、../.modelsフォルダの下におく。
+
 Llama-3-ELYZA-JP-8B-q4_k_m.gguf　約4.58 GB
+
+[READMEに用法の記載がある](https://huggingface.co/elyza/Llama-3-ELYZA-JP-8B-GGUF/blob/main/README.md)
+
+llama-serverを利用すればopenaiと互換があるようだ。
 
 ## 参考・謝辞
 
