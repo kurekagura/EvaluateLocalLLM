@@ -32,3 +32,13 @@
 ```
 
 >所要時間: 86.91 秒 要約文字数：1636 -> 181文字
+
+
+```xml
+  <ItemGroup>
+    <PackageReference Include="LLamaSharp" Version="0.16.0" />
+    <PackageReference Include="LLamaSharp.Backend.Cuda11" Version="0.16.0" />
+  </ItemGroup>
+```
+
+>所要時間: 19.84 秒 要約文字数：1636 -> 211文字

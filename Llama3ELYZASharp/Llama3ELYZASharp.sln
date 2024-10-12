@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Llama3ELYZASharp", "Llama3ELYZASharp.csproj", "{46B4D912-4429-41A3-A578-BAEC99A0FC64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Llama3ELYZASharp", "Llama3ELYZASharp.csproj", "{46B4D912-4429-41A3-A578-BAEC99A0FC64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Llama3ELYZASharp_CUDA", "Llama3ELYZASharp_CUDA.csproj", "{C5BB4B9B-BCF5-4EDA-9AC0-F04BD3BAAF46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{46B4D912-4429-41A3-A578-BAEC99A0FC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46B4D912-4429-41A3-A578-BAEC99A0FC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46B4D912-4429-41A3-A578-BAEC99A0FC64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5BB4B9B-BCF5-4EDA-9AC0-F04BD3BAAF46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5BB4B9B-BCF5-4EDA-9AC0-F04BD3BAAF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5BB4B9B-BCF5-4EDA-9AC0-F04BD3BAAF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5BB4B9B-BCF5-4EDA-9AC0-F04BD3BAAF46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
