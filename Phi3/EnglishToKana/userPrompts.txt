@@ -1,0 +1,3 @@
+﻿"Carrot","Tomato","Cucumber","Broccoli","Spinach","Lettuce","Pepper","Onion","Garlic","Potato"
+
+"Object","Instance","Class","Abstract"
