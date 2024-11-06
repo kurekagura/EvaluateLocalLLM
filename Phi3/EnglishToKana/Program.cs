@@ -16,11 +16,12 @@ internal class Program
             return;
         }
         //System
-        var systemPrompt = File.ReadLines("systemPrompt.txt").First();
+        var systemPrompt = File.ReadLines("systemPrompt2.txt").First();
+        Console.WriteLine($"System:{systemPrompt}");
 
         //ファイルから空行を境界として配列に読み込む。その後、改行を除去
         string newLine = System.Environment.NewLine;
-        string[] userPrompts = File.ReadAllText(@"userPrompts.txt").Split(new string[] { newLine + newLine }, StringSplitOptions.RemoveEmptyEntries);
+        string[] userPrompts = File.ReadAllText(@"userPrompts2.txt").Split(new string[] { newLine + newLine }, StringSplitOptions.RemoveEmptyEntries);
         //string[] userPrompts = File.ReadAllText(@"../../../PrivateJunkData/20241010_UserMessageList.txt").Split(new string[] { newLine + newLine }, StringSplitOptions.RemoveEmptyEntries);
         userPrompts = userPrompts.Select(prompt => prompt.Replace(newLine, "")).ToArray();
 
@@ -32,7 +33,7 @@ internal class Program
         Model model = new Model(args[0]);
         Tokenizer tokenizer = new Tokenizer(model); //Modelを指定してトークナイザを作成
         sw.Stop();
-        Console.WriteLine($"Modelロード時間(ms)：{sw.ElapsedMilliseconds}");
+        Console.WriteLine($"Modelロード時間(秒)：{sw.Elapsed.TotalSeconds}");
 
         sw = Stopwatch.StartNew();
 
@@ -45,7 +46,9 @@ internal class Program
 
         foreach (string userPrompt in userPrompts)
         {
-            var userInstruct = "次の英単語を日本語のカタカナ読みへ変換せよ";
+            //var userInstruct = "カタカナ読みに変換し、空文字の箇所を埋めよ。";
+            var userInstruct = string.Empty;
+            //Console.WriteLine(userInstruct);
             var finalPromptText = string.Format(promptTemple, systemPrompt, $"{userInstruct}{Environment.NewLine}###{Environment.NewLine}{userPrompt}");
 
             sw.Start();
