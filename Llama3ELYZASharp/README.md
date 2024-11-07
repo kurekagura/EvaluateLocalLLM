@@ -1,28 +1,26 @@
-# LLamaSharp
+﻿# LLamaSharp
 
 [LLamaSharp Documentation](https://scisharp.github.io/LLamaSharp/0.16.0/QuickStart/)
 
-
-����p�̃A�Z�b�g�𗘗p���Ă����B
+言語用のアセットを利用している例。
 [Chinese LLM - with GB2312 encoding](https://scisharp.github.io/LLamaSharp/0.16.0/Examples/ChatChineseGB2312/)
 
-
-## �l��ނ�Executor
+## 四種類のExecutor
 
 1. InteractiveExecutor
 1. InstructExecutor
 
-    �u�������݂𑱂���v�Ȃǂ̎w�������s������B
+    「書き込みを続けろ」などの指示を実行させる。
 
 1. StatelessExecutor
 
-    ������̃W���u�ɓK���Ă���B
+    一回限りのジョブに適している。
 
 1. BatchedExecutor
 
-    �����̓��͂��󂯕t���A�قȂ�Z�b�V�����̕����̏o�͂𓯎��ɐ������邱�Ƃ��ł���B
+    複数の入力を受け付け、異なるセッションの複数の出力を同時に生成することができる。
 
-## ���\����
+## 性能メモ
 
 ```xml
   <ItemGroup>
@@ -31,8 +29,7 @@
   </ItemGroup>
 ```
 
->���v����: 86.91 �b �v�񕶎����F1636 -> 181����
-
+>所要時間: 86.91 秒 要約文字数：1636 -> 181文字
 
 ```xml
   <ItemGroup>
@@ -41,4 +38,4 @@
   </ItemGroup>
 ```
 
->���v����: 19.84 �b �v�񕶎����F1636 -> 211����
+>所要時間: 19.84 秒 要約文字数：1636 -> 211文字
