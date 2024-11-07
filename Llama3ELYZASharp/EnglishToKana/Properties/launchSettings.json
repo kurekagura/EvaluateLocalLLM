@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EnglishToKana": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}

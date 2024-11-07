@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Llama3ELYZASharp_CUDA", "Llama3ELYZASharp\Llama3ELYZASharp_CUDA.csproj", "{7207F017-C9B3-499E-8714-E1DF61623253}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishToKana", "EnglishToKana\EnglishToKana.csproj", "{DC8BC9DD-F02E-46C3-A9AC-92FD9E9DAF9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7207F017-C9B3-499E-8714-E1DF61623253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7207F017-C9B3-499E-8714-E1DF61623253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7207F017-C9B3-499E-8714-E1DF61623253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8BC9DD-F02E-46C3-A9AC-92FD9E9DAF9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8BC9DD-F02E-46C3-A9AC-92FD9E9DAF9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8BC9DD-F02E-46C3-A9AC-92FD9E9DAF9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8BC9DD-F02E-46C3-A9AC-92FD9E9DAF9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
